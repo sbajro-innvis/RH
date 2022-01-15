@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+#banner {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/red-helicopter-homepage-banner-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.nav_bar {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.logo,
+#hamburger {
+  margin: 4%;
+}
+
+#hamburger {
+
+  cursor: pointer;
+  transition: opacity 0.25s linear;
+  width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+  height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
+  display: flex;
+  align-items: center;
+}
+
+#hamburger div,
+#hamburger div:after,
+#hamburger div:before {
+  background-color: #fafafa;
+  border-radius: 10px;
+  width: clamp(1rem, 2vw, 4rem);
+  height: clamp(2px, 1.4vw, 5px);
+  transition: all 0.15s linear;
+}
+
+#hamburger div:before,
+#hamburger div:after {
+  content: "";
+  position: absolute;
+}
+
+#hamburger div:before {
+  transform: translateY(-200%);
+}
+
+#hamburger div:after {
+  transform: translateY(200%);
+}
+
+#hamburger.open div {
+  background: transparent;
+}
+
+#hamburger.open div:before {
+  transform: rotate(45deg);
+}
+
+#hamburger.open div:after {
+  transform: rotate(-45deg);
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+#overlay.menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#overlay>div {
+  display: flex;
+  padding: 10% 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+#overlay a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #fafafa;
+  font-size: clamp(0.2rem, 50vw, 3rem);
+  margin: 3% 0;
+  text-align: center;
+  transition: opacity 0.2s linear;
+  display: inline;
+  position: relative;
+}
+
+#overlay a::after {
+  content: "";
+  background-color: #fafafa;
+  width: 100%;
+  height: 4%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-out;
+  transform: scaleX(0);
+}
+
+#overlay a:hover::after {
+  transform: scaleX(1);
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  font-family: 'lato';
+}
+
+.underline {
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+span {
+  color: red;
+}
+
+.link {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.link a {
+  margin-top: 200px;
+  color: #BF0000;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+.link a:hover {
+  color:rgb(190, 94, 94)
+}
+
+h3 {
+  margin-top: 50px;
+  color: white;
+  font-family: 'lato';
+  text-align: center;
+}
+
+.container-fluid {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#services .row {
+  position: relative;
+  right:10%;
+}
+
+.col-md-4 h4 {
+  text-align: right;
+  font-size: 35px;
+}
+
+
+.col-md-4 img {
+position:relative;
+left:40%;
+}
+
+
+.col-md-4 p {
+  color: white;
+  font-family: sans-serif;
+  font-family: 'lato';
+  text-align: right;
+
+}
+
+.col-md-4 {
+  border-right: 2px solid white;
+
+
+}
+
+h4 {
+  color: white;
+}
+
+
+
+.container {
+  margin-top: 50px;
+
+}
+
+
+.col-md-6 {
+  height: 100%;
+  width: 50%;
+  padding: 0;
+
+}
+
+.col-md-6 img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.new .articles {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+
+.new .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+.new p {
+  color: white;
+}
+
+.slider-text {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: lato;
+}
+
+.articles h2{
+  font-size: 40px;
+  font-family:'lato' , sans-serif;
+  position: relative;
+}
+
+.articles p{
+  font-size: 20px;
+  color:white;
+  font-family:'lato' , sans-serif;
+  position: relative;
+}
+
+.btn{
+  color:blanchedalmond;
+  border: 1px solid white;
+
+}
+
+.articles {
+  position: relative;
+}
+
+.overlay-text{
+  position:absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0, 0, 0, 0.5); 
+}
+
+.overlay-text .details{
+  position:absolute;
+  top:100%;
+  transform: translateY(-100%);
+}
+
+.col-md-12 li{
+  background-color: rgba(0, 0, 0, 0);
+  display: inline;
+}
+
+li a{
+  color:grey;
+  text-decoration: none;
+  padding:50px;
+  
+  
+}
+li a:hover{
+  color:rgb(255, 255, 255);
+  
+  
+}
+
+
+/*Floating Back-To-Top Button*/
+#topbtn {
+  position: fixed;
+  bottom: 40px;
+  left:90%;
+  float: right;
+  max-width: 60px;
+  width: 100%;
+  font-size: 25px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: black;
+  padding: 2px;
+  border-radius: 1px;
+
+}
+/*On Hover Color Change*/
+#topbtn:hover {
+  background-color:grey;
+}
+
+
+
+.container-fluid h3{
+  color:white;
+}
+
+.container-fluid .row .col img{
+  margin-top: 50px;
+  width:50%;
+}
+
+.container-fluid p{
+  margin-top: 30px;
+  color: white;
+  font-family: 'lato' sans-serif;
+  font-size: 20px;
+}
+
+
+.container-fluid .row .col a{
+  color:white;
+  text-decoration: none;;
+}
+
+.container-fluid .row .col div {
+  margin: 10px;
+}
+
+
+.container-fluid .row .col a:hover{
+  color:red;
+}
+
+.container-fluid .row .col div i{
+  color:white;
+  width:50px;
+}
+
+.container-fluid .row .col i{
+  font-size: 30px;
+}
+
+.container-fluid .row .col div i:hover{
+  color:red;
+}
+
+
+
+
+
+
+

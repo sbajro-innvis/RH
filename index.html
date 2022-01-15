@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Helicopter Films</title>
+  <!--Font Awesome-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome_beta/css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="lato/Lato-ThinItalic.ttf">
+  <link rel="shortcut icon" href="img/icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/responsive.css"
+ 
+</head>
+
+<body style="background-color:black;">
+  <!--Header-->
+  <div id="banner">
+    <main>
+      <div id="overlay">
+        <div>
+          <a href="#">Homepage</a>
+          <a href="#">Portfolio</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Info</a>
+        </div>
+      </div>
+      <div class="nav_bar">
+        <div class="logo"><img style="width: 25%;" src="img/red-helicopter-homepage-logo-image.png"></div>
+        <div id="hamburger">
+          <div></div>
+        </div>
+      </div>
+      <div id="js_content_blur"> </div>
+    </main>
+  </div>
+  <div>
+    <h1>Higher standard of production,<br>stories told in a beautiful way<br> only by professionals.</h1>
+  </div>
+  <div>
+    <p class="underline"> _____________</p>
+  </div>
+
+  <div>
+    <h2> <span>P</span>ortfolio </h2>
+  </div>
+
+  <!--Carousel -->
+  <style>
+    [type=radio] {
+      display: none;
+    }
+
+    #slider {
+      height: 35vw;
+      position: relative;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+    }
+
+    #slider label {
+      margin: auto;
+      width: 25%;
+      height: 100%;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      cursor: pointer;
+      transition: transform 0.4s ease;
+    }
+
+    #s1:checked~#slide4,
+    #s2:checked~#slide5,
+    #s3:checked~#slide1,
+    #s4:checked~#slide2,
+    #s5:checked~#slide3 {
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+      transform: translate3d(-120%, 0, -200px);
+    }
+
+    #s1:checked~#slide5,
+    #s2:checked~#slide1,
+    #s3:checked~#slide2,
+    #s4:checked~#slide3,
+    #s5:checked~#slide4 {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+      transform: translate3d(-60%, 0, -100px);
+    }
+
+    #s1:checked~#slide1,
+    #s2:checked~#slide2,
+    #s3:checked~#slide3,
+    #s4:checked~#slide4,
+    #s5:checked~#slide5 {
+      box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+      transform: translate3d(0, 0, 0);
+    }
+
+    #s1:checked~#slide2,
+    #s2:checked~#slide3,
+    #s3:checked~#slide4,
+    #s4:checked~#slide5,
+    #s5:checked~#slide1 {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+      transform: translate3d(60%, 0, -100px);
+    }
+
+    #s1:checked~#slide3,
+    #s2:checked~#slide4,
+    #s3:checked~#slide5,
+    #s4:checked~#slide1,
+    #s5:checked~#slide2 {
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+      transform: translate3d(120%, 0, -200px);
+    }
+  </style>
+
+  <body>
+
+    <br><br>
+
+    <section id="slider">
+      <input type="radio" name="slider" id="s1">
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3" checked>
+      <input type="radio" name="slider" id="s4">
+      <input type="radio" name="slider" id="s5">
+      <label onclick="myFunction()" for="s1" id="slide1">
+        <img src="img/movie1.jpg" height="100%" width="100%">
+        <div class="slider-text">INCEPTION</div>
+      </label>
+      <label for="s2" id="slide2">
+        <img src="img/movie2.jpg" height="100%" width="100%">
+        <div class="slider-text">FIGHT CLUB</div>
+      </label>
+      <label for="s3" id="slide3">
+        <img src="img/movie3.jpg" height="100%" width="100%">
+        <div class="slider-text">CASINO</div>
+      </label>
+      <label for="s4" id="slide4">
+        <img src="img/movie4.jpg" height="100%" width="100%">
+        <div class="slider-text">THE DARK KNIGHT</div>
+      </label>
+      <label for="s5" id="slide5">
+        <img src="img/movie5.jpg" height="100%" width="100%">
+        <div class="slider-text">GANGSTER</div>
+      </label>
+    </section>
+
+
+
+    <div class="link">
+      <a href="url"> View all work </a>
+    </div>
+
+
+    <div>
+      <p class="underline"> _____________</p>
+    </div>
+
+    <div>
+      <h2> <span>O</span>UR SERVICES </h2>
+    </div>
+
+    <div>
+      <h3> Red Helicopter Films is an award-wining, movie-focused creative company for charitable nonprofits,<br>
+        associations, and mission-driven organizations who want to motivate audiences to action.</h3>
+    </div>
+
+    <!--Services-->
+    <section id="services">
+      <div class="container-fluid ">
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <img src="img/services1.jpg">
+            <h4>PRODUCTION</h4>
+            <br>
+            <p>CREWING -</p>
+            <p>LOCATIONS -</p>
+            <p>CASTING -</p>
+            <p>EQUIPMENT -</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/services2.jpg">
+            <h4>POST PRODUCTION</h4>
+            <br>
+            <p>IMAGE EDITING -</p>
+            <p>VFX -</p>
+            <p>COLOURING -</p>
+            <p>SOUND EDITING -</p>
+            <p>SOUND DESIGN -</p>
+            <p>FOLEY -</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/services3.jpg">
+            <h4>SERVICES FOR INDI FILMS</h4>
+            <br>
+            <p>PITCHING -</p>
+            <p>BUDGETING -</p>
+            <p>PRODUCTION DESIGN -</p>
+            <p>STORYBOARD -</p>
+            <p>MARKETING -</p>
+            <p>CONTRACTS -</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <p class="underline"> _____________</p>
+    </div>
+
+    <div>
+      <h2> <span>N</span>EW </h2>
+    </div>
+    <section id="new">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 articles">
+            <img src="img/movie1cropped.jpg" class="img-responsive">
+            <div class="overlay-text">
+              <div class="details">
+                <h2>The first Neo/thriller movie
+                  made in South East Europe</h2>
+                <p>Andy Deliana was the producer of “out of touch”, a the first
+                  neo/thriller movie ever made in south east europe.</p>
+                <a class="btn" href="#" title="Read more" role="button">Read more</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 articles">
+            <img src="img/movie3cropped.jpg" class="img-responsive">
+            <div class="overlay-text">
+              <div class="details">
+                <h2>Our international
+                  breakthrough</h2>
+                <p>"The Perfect Gangster” was the movie that helped Andy Deliana
+                  to reach his international breakthrough.</p>
+                <a class="btn" href="#" title="Read more" role="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="link">
+      <a href="url"> View more </a>
+    </div>
+
+    <div>
+      <p class="underline"> _____________</p>
+    </div>
+
+    <div>
+      <h2> <span>C</span>ONTACT</h2>
+    </div>
+
+    <!--Contact-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <img src="img/red-helicopter-homepage-logo-image.png">
+          <p>HIGHER STANDARD<br>OF PRODUCTION</p>
+        </div>
+        <div class="col">
+          <h3>EXPLORE</h3>
+          <div><a href="#">NEW</a></div>
+          <div><a href="#">HOME</a></div>
+          <div><a href="#">OUR SERVICES</a></div>
+          <div><a href="#">PORTFOLIO</a></div>
+          <div><a href="#">CONTACT</a></div>
+        </div>
+        <div class="col">
+          <h3>LOCATION</h3>
+          <p>560W, 43 Rd Street <br> New York, NY</p>
+        </div>
+        <div class="col">
+          <h3>CONTACT</h3>
+          <div><a href="#">rhfilms.usa@gmail.com</a></div>
+        </div>
+        <div class="col">
+          <h3>CONNECT</h3>
+          <div><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li><a href="#">Imprint</a>
+              </li>
+              <li><a href="#">Privacy Policy</a>
+              </li>
+              <li><a href="#">Cookie Settings</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <button id="topbtn"><a href="#top" style="color: white">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </button>
+    </footer>
+
+
+
+
+
+
+    <!--Bootstrap-->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+
+    <!--JQUERY-->
+    <script src="js/jquery.js"></script>
+
+    <!--JS-->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
