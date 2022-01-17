@@ -158,11 +158,13 @@
 
 
     .container .row .details p {
-        font-size: 8px;
+        font-size: 15px;
+        margin-bottom:5px;
     }
 
     .container .row .details h2 {
-        font-size: 8px;
+        font-size: 20px;
+        margin-bottom:5px;
     }
     .link a{
         font-size: 18px;
@@ -206,12 +208,7 @@
     .col-md-4 {
         border-right: 0px solid white;
       }
-      #slider label{
-        height: 20vw;
-        position: relative;
-        perspective: 2000px;
-        transform-style: preserve-3d;
-    }
+
  
 }
 
@@ -226,7 +223,16 @@
     h1 {
         font-size: 25px;
         margin-bottom: -20px;
+        margin-top: 20px;
     }
+    .underline{
+        margin-top:20px;
+    }
+    .link {
+        margin-top: 50px;
+        text-align: center;
+    }
+
 
     h2 {
         font-size: 25px;
@@ -239,18 +245,27 @@
 
 
     .container .row .details p {
-        font-size: 8px;
+        font-size: 15px;
+        margin-bottom:5px;
     }
 
     .container .row .details h2 {
-        font-size: 8px;
+        font-size: 20px;
+        margin-bottom:5px;
     }
+
     .container-fluid{
         margin-top: -2px;
     }
     .link a{
         font-size: 18px;
 
+    }
+    #services .container-fluid .row .col-md-4{
+        
+    }
+    .col-md-4 h4 {
+        margin-bottom: -30px;
     }
     #topbtn {
         position: fixed;
