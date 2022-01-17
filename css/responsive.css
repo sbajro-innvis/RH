@@ -145,7 +145,7 @@
 
     h2 {
         font-size: 25px;
-        margin-bottom: -5px;
+        margin-bottom: -20px;
     }
 
     .link{
@@ -206,9 +206,13 @@
     .col-md-4 {
         border-right: 0px solid white;
       }
-      .col{
-        margin-top:-20px;
+      #slider label{
+        height: 20vw;
+        position: relative;
+        perspective: 2000px;
+        transform-style: preserve-3d;
     }
+ 
 }
 
 /* The Smallest Sized devices */
@@ -233,10 +237,6 @@
         font-size: 15px;
     }
 
-    /* .container .row .col-md-6{
-        display :flex;
-        flex-wrap: wrap;
-    } */
 
     .container .row .details p {
         font-size: 8px;
@@ -289,8 +289,6 @@
     }
     .col-md-4 {
         border-right: 0px solid white;
-      
-      
       }
 }
 
