@@ -32,3 +32,16 @@ initHamburger();
 
 /* h1 animation  */
 $('h1 ').hide().slideDown(1000);
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if($(window).scrollTop() > $(banner).height()){
+          $(".nav_bar").css({"background-color":"rgba(0,0,0,0.8"});   
+      }
+      else{
+          $(".nav_bar").css({"background-color":"transparent"});
+      }
+
+  })
+})

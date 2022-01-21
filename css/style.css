@@ -19,10 +19,10 @@ main {
   background-color: transparent;
 }
 
-.nav_bar {
+.nav_bar{
   width: 100%;
   position: fixed;
-  background-color: transparent;
+  background-color:transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -273,6 +273,8 @@ h4 {
   font-size: 40px;
   font-family:'lato' , sans-serif;
   position: relative;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .articles p{
@@ -280,11 +282,13 @@ h4 {
   color:white;
   font-family:'lato' , sans-serif;
   position: relative;
+  padding-left: 20px;
 }
 
 .btn{
   color:blanchedalmond;
   border: 1px solid white;
+  margin: 0px 20px 20px;
 
 }
 
@@ -406,6 +410,8 @@ li a:hover{
   position: relative;
   right: 20%;
 }
+
+
 
 
 
